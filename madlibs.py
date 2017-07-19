@@ -61,7 +61,7 @@ def show_madlib():
     adjective = request.args.get("adjective")
 
     return render_template("madlib.html",color = color,
-                           noun = noun, person = person, adjective = adjective)
+                           noun = noun, person = person, adjective=adjective)
 
 if __name__ == '__main__':
     # Setting debug=True gives us error messages in the browser and also
